@@ -1,21 +1,45 @@
 aid: aestheticpartners
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aestheticpartners.png
 name: Aestheticpartners
-description: 'Aestheticpartners is a company surfaced as a portfolio company of norwest-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Aesthetic Partners is a clinical-aesthetics practice-management company that partners
+  with physician-led medical aesthetics, cosmetic dermatology, and plastic surgery clinics to help them
+  grow through expansion rather than consolidation. It provides partner practices with capital, marketing,
+  HR, recruiting, IT, accounting, and legal support, plus professional development and new-clinic launch
+  help. Incubated at Harvard and distinguished as female- and minority-owned, the company operates a
+  network of practices across California, Florida, North Carolina, and Virginia, is headquartered in
+  Miami, FL, and is backed by a strategic investment from Norwest Venture Partners. Aesthetic Partners
+  is a non-technical healthcare-services business and does not currently publish a public API, developer
+  portal, or technical documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/aestheticpartners/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - norwest-venture-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-api-surface
+x-sector: healthcare-services
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Unknown
+- Medical Aesthetics
+- Healthcare
+- Dermatology
+- Plastic Surgery
+- Practice Management
+- Cosmetic
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aestheticpartners-domain-security.yml
 - type: Website
   url: https://aestheticpartners.com
+- type: TermsOfService
+  url: https://aestheticpartners.com/terms-of-service-2
+- type: PrivacyPolicy
+  url: https://aestheticpartners.com/terms-of-service-2
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
